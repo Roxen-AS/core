@@ -34,7 +34,7 @@
     "build:only-clean": "rimraf './dist' './tsconfig.build.tsbuildinfo'",
     "changelog:update": "../../scripts/update-changelog.sh @metamask/platform-api-docs",
     "changelog:validate": "../../scripts/validate-changelog.sh @metamask/platform-api-docs",
-    "cli": "node --import ../../scripts/resolver/register.ts --experimental-transform-types src/cli.ts",
+    "cli": "node --import ../../scripts/resolver/register.ts src/cli.ts",
     "lint:tsconfigs": "node --import ../../scripts/resolver/register.ts --experimental-transform-types ../../scripts/lint-tsconfigs/lint-tsconfigs.ts",
     "lint:tsconfigs:fix": "node --import ../../scripts/resolver/register.ts --experimental-transform-types ../../scripts/lint-tsconfigs/lint-tsconfigs.ts --fix",
     "since-latest-release": "../../scripts/since-latest-release.sh",
@@ -80,6 +80,7 @@
   },
   "scriptsConfig": {
     "#default": "lavamoat/scripts.strict.json",
-    "audit-script": "lavamoat/scripts.yarn.json"
+    "audit-script": "lavamoat/scripts.yarn.json",
+    "cli": "lavamoat/workspaces/scripts.build-docs.json"
   }
 }
