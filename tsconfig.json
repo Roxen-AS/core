@@ -164,6 +164,9 @@
       "path": "./packages/logging-controller"
     },
     {
+      "path": "./packages/marketing-consent-controller"
+    },
+    {
       "path": "./packages/message-manager"
     },
     {
@@ -171,6 +174,9 @@
     },
     {
       "path": "./packages/messenger-cli"
+    },
+    {
+      "path": "./packages/mfa-recovery-controller"
     },
     {
       "path": "./packages/money-account-api-data-service"
@@ -315,6 +321,9 @@
     },
     {
       "path": "./packages/transaction-pay-middleware"
+    },
+    {
+      "path": "./packages/type-utils"
     },
     {
       "path": "./packages/user-operation-controller"
