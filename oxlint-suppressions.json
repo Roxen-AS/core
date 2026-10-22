@@ -3631,6 +3631,9 @@
     "typescript/no-unsafe-return": {
       "count": 19
     },
+    "vitest/no-conditional-expect": {
+      "count": 2
+    },
     "vitest/no-conditional-in-test": {
       "count": 2
     }
@@ -3638,6 +3641,9 @@
   "packages/network-controller/tests/network-client/block-param.ts": {
     "typescript/no-unsafe-return": {
       "count": 21
+    },
+    "vitest/no-conditional-expect": {
+      "count": 2
     },
     "vitest/no-conditional-in-test": {
       "count": 2
@@ -3657,6 +3663,9 @@
   "packages/network-controller/tests/network-client/no-block-param.ts": {
     "typescript/no-unsafe-return": {
       "count": 20
+    },
+    "vitest/no-conditional-expect": {
+      "count": 2
     },
     "vitest/no-conditional-in-test": {
       "count": 2

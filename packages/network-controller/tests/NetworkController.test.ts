@@ -15655,7 +15655,6 @@ function refreshNetworkTests({
   initialState?: Partial<NetworkState>;
   operation: (controller: NetworkController) => Promise<void>;
 }): void {
-  // eslint-disable-next-line vitest/require-top-level-describe
   it('emits networkWillChange with state payload', async () => {
     await withController(
       {
@@ -15684,7 +15683,6 @@ function refreshNetworkTests({
     );
   });
 
-  // eslint-disable-next-line vitest/require-top-level-describe
   it('emits networkDidChange with state payload', async () => {
     await withController(
       {
@@ -15714,7 +15712,6 @@ function refreshNetworkTests({
   });
 
   if (expectedNetworkClientConfiguration.type === NetworkClientType.Custom) {
-    // eslint-disable-next-line vitest/require-top-level-describe
     it('sets the provider to a custom RPC provider initialized with the RPC target and chain ID', async () => {
       await withController(
         {
@@ -15754,7 +15751,6 @@ function refreshNetworkTests({
       );
     });
   } else {
-    // eslint-disable-next-line vitest/require-top-level-describe
     it(`sets the provider to an Infura provider pointed to ${expectedNetworkClientConfiguration.network}`, async () => {
       await withController(
         {
@@ -15799,7 +15795,6 @@ function refreshNetworkTests({
     });
   }
 
-  // eslint-disable-next-line vitest/require-top-level-describe
   it('replaces the provider object underlying the provider proxy without creating a new instance of the proxy itself', async () => {
     await withController(
       {
@@ -17031,7 +17026,6 @@ async function waitForPublishedEvents<Events extends NetworkControllerEvents>({
             );
           }
 
-          // eslint-disable-next-line require-atomic-updates
           alreadyEnded = true;
         }
       }
